@@ -1,4 +1,4 @@
-.nav {
+.nav.wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8,7 +8,7 @@
 .nav>p {
     margin: 0;
     padding: 0;
-    flex: 1 0 auto;
+    width: 30rem;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -16,7 +16,7 @@
 .nav>ul {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 auto;
+    width: 30rem;
     justify-content: space-between;
 }
 
