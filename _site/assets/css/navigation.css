@@ -1,39 +1,95 @@
-.nav.wrapper {
+.nav .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
-.nav>p {
-    margin: 0;
-    padding: 0;
-    width: 30rem;
+.nav .wrapper>p {
+    display: block;
+    flex: 0 0 auto;
+    padding: 0.2rem;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.nav>ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30rem;
-    justify-content: space-between;
-}
-
-.nav ul li {
+.nav .wrapper ul li {
+    background: grey;
     display: block;
     margin: 0.2rem;
     padding: 0.5rem;
-    background: grey;
 }
 
-.nav a {
+.nav .wrapper a {
     color: white;
 }
 
+.nav .wrapper li:hover,
+.nav .wrapper a:hover {
+    background: black;
+}
 
-/* @media screen and (min-width:1000px) {
-    .nav {
-        justify-content: flex-end;
+.nav .wrapper ul ul {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav .wrapper li:hover>ul {
+    opacity: 1;
+    background: white;
+    pointer-events: inherit;
+}
+
+@media screen and (max-width:800px) {
+    .nav .wrapper {
+        justify-content: center;
     }
-} *
+    .nav .wrapper>p {
+        display: block;
+        flex: 0 0 auto;
+    }
+    .nav .wrapper>ul {
+        display: block;
+        width: 100%;
+    }
+    .nav .wrapper a {
+        display: block;
+        text-align: center;
+    }
+    .nav .wrapper ul li {
+        margin: 0.2rem 0;
+    }
+    .nav .wrapper ul ul {
+        z-index: 1;
+        left: 6px;
+        top: 92px;
+        width: 98%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .nav .wrapper {
+        justify-content: space-between;
+    }
+    .nav .wrapper>ul {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .nav .wrapper ul li {
+        display: block;
+    }
+    .nav .wrapper ul li {
+        display: block;
+    }
+    .nav .wrapper li a {
+        display: block;
+        text-align: center;
+    }
+    .nav .wrapper ul ul {
+        top: 3rem;
+        left: 0px;
+        width: 100%;
+    }
+}

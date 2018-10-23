@@ -14,12 +14,14 @@
 
 
 </head>
-<header class="site-header">
-    {%include navigation.html%}
-</header>
 
 <body>
-    {{content}}
+    <header class="site-header">
+        {%include navigation.html%}
+    </header>
+    <main>
+        {{content}}
+    </main>
 </body>
 
 </html>
