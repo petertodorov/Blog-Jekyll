@@ -3,14 +3,6 @@
     flex-wrap: wrap;
 }
 
-.nav .wrapper>p {
-    display: block;
-    flex: 0 0 auto;
-    padding: 0.2rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 .nav .wrapper ul li {
     background: grey;
     display: block;
@@ -20,6 +12,15 @@
 
 .nav .wrapper a {
     color: white;
+}
+
+.nav .wrapper>p>a {
+    display: block;
+    flex: 0 0 auto;
+    padding: 0.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
 }
 
 .nav .wrapper li:hover,
@@ -91,5 +92,9 @@
         top: 3rem;
         left: 0px;
         width: 100%;
+    }
+    .nav .wrapper .nameLink:hover {
+        text-decoration: underline;
+        background: inherit;
     }
 }
