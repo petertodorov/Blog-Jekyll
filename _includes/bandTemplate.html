@@ -1,0 +1,15 @@
+<section class="band">
+    <div class="wrapper">
+        <article class="bandTemplate">
+            <a href="#" class="link">{{page.band-name}}</a>
+            <ul>
+                {% for item in page.members %}
+                <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+            <span class="avatar">
+            {{page.image}}
+            </span>
+        </article>
+    </div>
+</section>

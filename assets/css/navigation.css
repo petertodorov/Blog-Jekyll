@@ -36,8 +36,8 @@
 
 .nav .wrapper li:hover>ul {
     opacity: 1;
-    background: white;
     pointer-events: inherit;
+    position: absolute;
 }
 
 @media screen and (max-width:800px) {
@@ -46,24 +46,29 @@
     }
     .nav .wrapper>p {
         display: block;
-        flex: 0 0 auto;
+        flex: 1 0 100%;
     }
     .nav .wrapper>ul {
         display: block;
-        width: 100%;
+        width: 40%;
     }
     .nav .wrapper a {
         display: block;
         text-align: center;
     }
-    .nav .wrapper ul li {
-        margin: 0.2rem 0;
+    .nav .wrapper ul ul li {
+        display: inline-block;
+        margin: 0.1rem 0;
+        width: 100%;
     }
     .nav .wrapper ul ul {
+        display: block;
         z-index: 1;
-        left: 6px;
-        top: 92px;
-        width: 98%;
+        left: -2px;
+        width: 100%;
+    }
+    .nav .wrapper li:hover>ul {
+        position: relative;
     }
 }
 
@@ -96,5 +101,8 @@
     .nav .wrapper .nameLink:hover {
         text-decoration: underline;
         background: inherit;
+    }
+    .nav .wrapper li:hover>ul {
+        position: absolute;
     }
 }

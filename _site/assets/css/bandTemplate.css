@@ -1,0 +1,79 @@
+                .band {
+                    display: block;
+                    margin: 3rem 0;
+                }
+                
+                .bandTemplate {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: center;
+                    align-items: center;
+                }
+                
+                .bandTemplate ul {
+                    display: block;
+                    width: 30rem;
+                    padding: 2rem 0 1rem 0;
+                }
+                
+                .bandTemplate li {
+                    font-weight: bold;
+                    display: inline-block;
+                }
+                
+                .bandTemplate span {
+                    display: block;
+                }
+                
+                .link {
+                    display: flex;
+                    height: 10rem;
+                    flex: 0 0 10rem;
+                    justify-content: center;
+                    align-items: center;
+                    background: grey;
+                    color: white;
+                    border: none;
+                    border-radius: 0.3rem;
+                    padding: 0.2rem;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                
+                .avatar {
+                    flex: 1 1 100%;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 0.3rem;
+                    margin: 3rem 0;
+                }
+                
+                .avatar img {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                }
+                
+                .avatar:before {
+                    display: flex;
+                    flex: 0 0 100%;
+                    content: '';
+                }
+                
+                .avatar:before {
+                    background: orange;
+                    padding-top: 60%;
+                }
+                
+                @media screen and (max-width:800px) {
+                    .bandTemplate {
+                        justify-content: center;
+                    }
+                    .bandTemplate ul {
+                        text-align: center;
+                    }
+                }
