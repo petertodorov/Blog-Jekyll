@@ -3,6 +3,12 @@
     flex-wrap: wrap;
 }
 
+.nav .wrapper ul ul {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .nav .wrapper ul li {
     background: grey;
     display: block;
@@ -28,16 +34,14 @@
     background: black;
 }
 
-.nav .wrapper ul ul {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .nav .wrapper li:hover>ul {
     opacity: 1;
-    pointer-events: inherit;
+    pointer-events: all;
     position: absolute;
+}
+
+.description {
+    padding: 1rem 0 0 0;
 }
 
 @media screen and (max-width:800px) {

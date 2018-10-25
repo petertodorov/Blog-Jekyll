@@ -2,14 +2,14 @@
 layout: default
 band-name: Merudia
 members:
-- Стефан - барабани
-- Петър - перкусии
-- Йоана - бас
-- Весо - глас, китара
-- Ася - глас
-- Християн - кавал, мелодика, клавир, глас
+- Stefan Cekov - drums
+- Peter Todorov - percussions
+- Yoana Ivanova - bass 
+-  Veselin Yovchev - voice, guitar
+- Asya Pincheva - voice
+- Hristian Georgiev - kaval, keys voice
 image: <img src="/assets/images/merudia.jpg" alt="Merudia all">
-url: www.facebook.com/merudia
+urlLink: https://www.facebook.com/Merudia/
 ---
 
 {%include bandTemplate.html%}
