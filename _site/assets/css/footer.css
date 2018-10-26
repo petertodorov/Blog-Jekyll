@@ -1,0 +1,5 @@
+.mail:before {
+    content: "\f003";
+    font-family: "icomoon";
+    speak: none;
+}

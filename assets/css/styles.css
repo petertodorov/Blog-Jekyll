@@ -4,11 +4,23 @@
 @import url("navigation.css");
 @import url("photos.css");
 @import url("bandTemplate.css");
+@import url("style.css");
+@import url("footer.css");
+html,
+body {
+    height: 100%;
+}
+
 body {
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 .wrapper {
     max-width: 100%;
-    margin: 0 auto;
 }

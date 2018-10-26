@@ -2,27 +2,26 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/typography.css">
-
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/buttons.css">
-    <link rel="stylesheet" href="/assets/css/photos.css">
-    <link rel="stylesheet" href="/assets/css/navigation.css">
-    <link rel="stylesheet" href="/assets/css/bandTemplate.css">
-
-
+</head>
 </head>
 
 <body>
-    <header class="site-header">
+    <header>
         {%include navigation.html%}
     </header>
-    <main>
-        {{content}}
-    </main>
+    <div class="content">
+        <main>
+            {{content}}
+        </main>
+    </div>
+    <footer>
+        {%include footer.html%}
+    </footer>
 </body>
 
 </html>

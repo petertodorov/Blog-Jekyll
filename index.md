@@ -1,6 +1,11 @@
 ---
 layout: default 
 title: Peter's Blog
-
+urlLink: /about
 ---
-  {% include mainPhoto.html %}
+<section>
+    <a href="{{page.urlLink}}">
+        <img src="/assets/images/p.jpg" id="photo-peter" alt="Photo Peter">
+    </a>
+</section>
+  <!-- {% include indexPage.html %} -->
