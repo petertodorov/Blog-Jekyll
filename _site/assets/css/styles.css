@@ -22,5 +22,12 @@ body {
 }
 
 .wrapper {
-    max-width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+@media screen and (min-width:800px) {
+    .wrapper {
+        max-width: 100%;
+    }
 }

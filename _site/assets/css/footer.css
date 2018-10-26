@@ -1,5 +1,18 @@
+.mail {
+    display: flex;
+    width: 25rem;
+    background: grey;
+    position: relative;
+    color: black;
+    height: 10;
+}
+
 .mail:before {
     content: "\f003";
     font-family: "icomoon";
-    speak: none;
+    width: 20rem;
+    height: inherit;
+    position: absolute;
+    border: 2px solid black;
+    color: white;
 }
